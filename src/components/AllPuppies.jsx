@@ -1,5 +1,4 @@
 import  React  from 'react';
-
 const AllPuppies = (props) => {
     const myPuppies = props.puppyData
     console.log(myPuppies)
@@ -9,7 +8,12 @@ const AllPuppies = (props) => {
             myPuppies.map((puppy) => {
                 return (
                     <div key={`player-${puppy.id}`} className="puppy">
+                        
                         <div>{puppy.name}</div>
+                        <div>{puppy.breed}</div>
+                        <div>{puppy.status}</div>
+                        <img id='puppyImg' src={puppy.imageUrl} alt="image" height={400} width={300}></img>
+                        {/* <div>{puppy.imageUrl}</div> */}
                     </div>
                     
             )}

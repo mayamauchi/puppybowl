@@ -15,3 +15,26 @@ body {
   display: flex;
   align-items: center;
 }
+
+.box {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* text-align: center; */
+justify-content: space-evenly;
+
+}
+
+.puppy {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  justify-content: space-evenly;
+
+}
+
+#puppyImg {
+
+  border: 1px solid black;
+
+}
