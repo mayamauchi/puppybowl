@@ -14,9 +14,9 @@ const root = ReactDOM.createRoot(container)
 
 const router = createBrowserRouter(
       createRoutesFromElements(
-        <Route path="/" element={<Main/>}>
-          <Route path="puppies" element={<AllPuppies />}/>
-          <Route path="puppy" element={<PuppyDaTails/>}/>
+        <Route path="/" >
+          <Route path="" element={<Main />}/>
+          <Route path="PuppyDaTails" element={<PuppyDaTails/>}/>
         </Route>
       )
       );
