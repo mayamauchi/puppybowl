@@ -13,7 +13,9 @@ const AllPuppies = (props) => {
                         <div>{puppy.breed}</div>
                         <div>{puppy.status}</div>
                         <img id='puppyImg' src={puppy.imageUrl} alt="image" height={400} width={300}></img>
-                        {/* <div>{puppy.imageUrl}</div> */}
+                       <input type='button' value='See Da Tails'/>
+                       <input type='button' value='Delete from Roster'/>
+
                     </div>
                     
             )}

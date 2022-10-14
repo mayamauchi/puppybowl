@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Navbar, AllPuppies, Searchbar } from "./";
+import {Navbar, AllPuppies, Searchbar, SinglePuppy, PuppyDaTails } from "./";
 
 const Main = () => {
 const [puppyData, setPuppyData] = useState([]);
