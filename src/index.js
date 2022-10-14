@@ -14,8 +14,8 @@ const root = ReactDOM.createRoot(container)
 
 const router = createBrowserRouter(
       createRoutesFromElements(
-        <Route path="/" element={<Navbar/>}>
-          <Route path="puppies" element={<Main />}/>
+        <Route path="/" element={<Main/>}>
+          <Route path="puppies" element={<AllPuppies />}/>
           <Route path="puppy" element={<PuppyDaTails/>}/>
         </Route>
       )
@@ -27,5 +27,6 @@ const router = createBrowserRouter(
 
 
 root.render(<React.StrictMode> 
+    <Navbar />
     <RouterProvider router={router} />
     </React.StrictMode>)

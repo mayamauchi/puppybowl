@@ -1,6 +1,24 @@
-import  React  from "react";
+import  React, {useState, useEffect} from "react";
 
 const Searchbar = () => {
+  const [searchInput, setSearchInput] = useState({})
+
+  const searchData = [
+    
+  ]
+    
+
+
+
+
+
+
+
+
+
+
+
+
     return (
       <div id="searchbar">
           <input type ="text" placeholder="Name"/>
