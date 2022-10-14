@@ -7,11 +7,11 @@ const PuppyDaTails = (props) => {
     const [puppy, setPuppy] = useState({})
     useEffect(() => {
         async function getPuppy() {try {
-      const response = await fetch('https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players/');
+      const response = await fetch(`https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players/${id}`);
       const result= await response.json();
       const puppyData = result.data.player
-    //   setPuppy (puppyData)
-      console.log(result);
+      setPuppy (puppyData)
+      
         } catch (err) {
             console.log(err);
         }
@@ -19,13 +19,13 @@ const PuppyDaTails = (props) => {
         }
         getPuppy();
     }, [])
-
+console.log(puppy)
 
     return (
         <div className='details'>
-            <SinglePuppy puppy={puppy}/>
+            
             <div key={`player-${puppy.id}`} className="puppy">
-                        <div>{puppy.id}</div>
+                        <div>{'#' + puppy.id}</div>
                         <div>{puppy.name}</div>
                         <div>{puppy.breed}</div>
                         <div>{puppy.status}</div>

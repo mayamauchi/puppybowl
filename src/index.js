@@ -16,7 +16,7 @@ const router = createBrowserRouter(
       createRoutesFromElements(
         <Route path="/" >
           <Route path="" element={<Main />}/>
-          <Route path="PuppyDaTails" element={<PuppyDaTails/>}/>
+          <Route path="PuppyDaTails/:id" element={<PuppyDaTails/>}/>
         </Route>
       )
       );
