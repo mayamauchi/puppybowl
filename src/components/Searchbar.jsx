@@ -1,37 +1,24 @@
-import  React, {useState, useEffect} from "react";
+import  React from "react";
 
-const Searchbar = () => {
-  const [searchInput, setSearchInput] = useState({})
+const Searchbar = (props) => {
+  return (
+    <div id="Searchbar">
+      <div><form
+      onSubmit={(e) => {
+      e.preventDefault();
+      props.setSearchTerm(e.target[0].value);
+    }}
+    >
+      <label>
+      <input type ="text" placeholder="Name"/>    
+      </label>
+      <input type='button' value='Submit'/>
+    </form></div>
+    </div>   
 
-  const searchData = [
     
-  ]
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    return (
-      <div id="searchbar">
-          <input type ="text" placeholder="Name"/>
-          <input type='button' value='Submit'/>
-          <input type ="text" placeholder="Breed"/>
-          <input type='button' value='Submit'/>
-
-    </div>
     );
   };
-
-
-
 
 
 export default Searchbar; 
