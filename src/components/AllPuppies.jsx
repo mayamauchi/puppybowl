@@ -8,7 +8,7 @@ const AllPuppies = (props) => {
             myPuppies.map((puppy) => {
                 return (
                     <div key={`player-${puppy.id}`} className="puppy">
-                        
+                        <div>{'#'+ puppy.id}</div>
                         <div>{puppy.name}</div>
                         <div>{puppy.breed}</div>
                         <div>{puppy.status}</div>

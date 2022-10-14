@@ -30,11 +30,16 @@ justify-content: space-evenly;
   flex-direction: column;
   /* border: 2px solid black; */
   justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: 5px 3px #9191919b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+
 
 }
 
 #puppyImg {
-
-  border: 1px solid black;
-
+  border-radius: 10px;
+  padding: 5px;
 }

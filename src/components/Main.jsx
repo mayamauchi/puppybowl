@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Navbar, AllPuppies } from "./";
+import {Navbar, AllPuppies, Searchbar } from "./";
 
 const Main = () => {
 const [puppyData, setPuppyData] = useState([]);
@@ -15,16 +15,12 @@ const [puppyData, setPuppyData] = useState([]);
   )
 
 
-
-// puppyData.map((e) => {
-//   console.log(e)
-// })
-
   return (
     <div id="main">
       
       <div id="container">
       <Navbar />
+      <Searchbar />
       <AllPuppies puppyData = {puppyData}/>
       </div>
     </div>

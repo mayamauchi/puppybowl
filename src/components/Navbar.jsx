@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div id="navbar">
-        <h2>Adopt a puppy!</h2>
+        <h2>Pedigree "Adopt a Puppy" Event</h2>
   </div>
   );
 };

@@ -3,7 +3,7 @@ import  React  from "react";
 const Searchbar = () => {
     return (
       <div id="searchbar">
-          <h2>Adopt a puppy!</h2>
+          <input type ="text" placeholder="Name"/>
     </div>
     );
   };
