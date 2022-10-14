@@ -21,6 +21,7 @@ const [puppyData, setPuppyData] = useState([]);
       <div id="container">
       <Navbar />
       <Searchbar />
+      {/* <SinglePuppy puppies = {puppies}/> */}
       <AllPuppies puppyData = {puppyData}/>
       </div>
     </div>

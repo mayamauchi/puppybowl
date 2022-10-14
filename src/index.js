@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from "react-dom/client"
-import {Main} from './components'
+import {Main, Navbar, SinglePuppy, AllPuppies, PuppyDaTails} from './components'
 import {
     createBrowserRouter,
     RouterProvider,
@@ -8,22 +8,18 @@ import {
     createRoutesFromElements,
   } from "react-router-dom";
 
-// const BasicComponentNameHere = () => { 
-//     return ( 
-//     <div> 
-//         <p>Hello World!</p> 
-//         </div> 
-//         ) 
-//     }
-
 
 const container = document.getElementById('app')
 const root = ReactDOM.createRoot(container)
 
 const router = createBrowserRouter(
       createRoutesFromElements(
-        <Route path="/" element={<Main />}></Route>
-      ))
+        <Route path="/" element={<Navbar/>}>
+          <Route path="puppies" element={<Main />}/>
+          <Route path="puppy" element={<PuppyDaTails/>}/>
+        </Route>
+      )
+      );
           
           
 
