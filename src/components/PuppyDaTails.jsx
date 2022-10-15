@@ -33,9 +33,9 @@ const PuppyDaTails = (props) => {
           height={400}
           width={300}
         ></img>
-        <div>{puppy.name}</div>
-        <div>{puppy.breed}</div>
-        <div>{puppy.status}</div>
+        <div>{'Name: ' + puppy.name}</div>
+        <div>{'Breed: ' + puppy.breed}</div>
+        <div>{'Status: ' + puppy.status}</div>
         <div>{'Team: ' + puppy.teamId}</div>
       <Link to="/">
         <button>Go Back</button>
