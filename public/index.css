@@ -7,6 +7,9 @@ body {
 }
 
 #navbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-family: 'Poller One', Arial, sans-serif;
   flex-grow: 1;
   max-height: 10%;
@@ -23,12 +26,14 @@ flex-direction: row;
 flex-wrap: wrap;
 /* text-align: center; */
 justify-content: space-evenly;
-
+width: 90vw;
+margin: auto;
 }
 
 .puppy {
   display: flex;
   flex-direction: column;
+  text-align: center;
   /* border: 2px solid black; */
   justify-content: space-evenly;
   border-radius: 10px;
@@ -45,3 +50,20 @@ justify-content: space-evenly;
   padding: 5px;
   
 }
+
+.details {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  /* text-align: center; */
+  justify-content: center; 
+}
+
+#Searchbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+

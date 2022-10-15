@@ -36,10 +36,11 @@ const PuppyDaTails = (props) => {
         <div>{puppy.name}</div>
         <div>{puppy.breed}</div>
         <div>{puppy.status}</div>
-      </div>
+        <div>{'Team: ' + puppy.teamId}</div>
       <Link to="/">
         <button>Go Back</button>
       </Link>
+      </div>
     </div>
   );
 };

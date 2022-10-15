@@ -1,5 +1,6 @@
 import  React from "react";
 
+
 const Searchbar = (props) => {
   return (
     <div id="Searchbar">
@@ -12,13 +13,14 @@ const Searchbar = (props) => {
       <label>
       <input type ="text" placeholder="Name"/>    
       </label>
-      <input type='button' value='Submit'/>
+      <button>Submit</button>
     </form></div>
     </div>   
 
     
     );
   };
+    
 
 
 export default Searchbar; 
